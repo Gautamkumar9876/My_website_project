@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+{{>navbar}}
+    
+    <section>
+  <div class="row mb-4 gallery-style">
+    <h1 class="text-center main-heading my-5">Gallery</h1>
+    <p class="text-center sub-heading">Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row col-md-10 col-12 mx-auto gallerys">
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m12.jpg" target="_blank">
+          <img src="img/m12.jpg" alt="Image" class="img-fluid" />
+        </a>
+        <div class="d-flex justify-content-between">
+          <span class="tm-text-gray-light">24 Sep 2020</span>
+          <span>16,008 views</span>
+        </div>
+        <figcaption class="d-flex align-items-center justify-content-center">
+          <h2>Himachal</h2>
+        </figcaption>
+
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m13.jpg" target="_blank">
+          <img src="img/m13.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/mountain.jpg" target="_blank">
+          <img src="img/mountain.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m1.jpg" target="_blank">
+          <img src="img/m1.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m2.jpg" target="_blank">
+          <img src="img/m2.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m8.jpg" target="_blank">
+          <img src="img/m8.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m4.jpg" target="_blank">
+          <img src="img/m4.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m5.jpg" target="_blank">
+          <img src="img/m5.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m7.jpg" target="_blank">
+          <img src="img/m7.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m3.jpg" target="_blank">
+          <img src="img/m3.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m9.jpg" target="_blank">
+          <img src="img/m9.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+        <a href="img/m10.jpg" target="_blank">
+          <img src="img/m10.jpg" alt="Image" class="img-fluid" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- row -->
+  <div class="d-flex justify-content-center align-items-center flex-column mb-5">
+    <button class="btn btn-danger btn-style">See More..</button>
+
+  </div>
+
+</section>
+
+        {{>footer}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+          $('.gallerys').magnificPopup({ 
+            type:'image',
+            delegate: 'a',
+            gallery:{
+                enabled:true
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
